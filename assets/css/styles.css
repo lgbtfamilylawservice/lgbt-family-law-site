@@ -367,6 +367,30 @@ p { margin: 0 0 1em; }
 
 @media (max-width: 700px) { .legal-toc ol { columns: 1; } }
 
+/* ---------- Service item list (category pages) ---------- */
+.service-items { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; margin: 1.5rem 0; }
+.service-item { background: #fff; border: 1px solid var(--color-line); border-radius: var(--radius-sm); padding: 1rem 1.15rem; position: relative; }
+.service-item h3 { font-family: var(--font-sans); font-size: 1rem; font-weight: 600; color: var(--color-ink); margin: 0 0 0.3rem; }
+.service-item p { color: var(--color-ink-soft); font-size: 0.92rem; margin: 0; line-height: 1.55; }
+@media (max-width: 700px) { .service-items { grid-template-columns: 1fr; } }
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb { padding: 1rem 0 0; font-size: 0.88rem; color: var(--color-muted); }
+.breadcrumb ol { list-style: none; padding: 0; margin: 0; display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.breadcrumb li { display: inline-flex; align-items: center; gap: 0.4rem; }
+.breadcrumb li + li::before { content: "›"; color: var(--color-muted); margin-right: 0.2rem; }
+.breadcrumb a { color: var(--color-muted); }
+.breadcrumb a:hover { color: var(--color-accent); }
+.breadcrumb [aria-current="page"] { color: var(--color-ink); font-weight: 500; }
+
+/* ---------- Map embed ---------- */
+.map-section { padding: 3rem 0 4rem; background: var(--color-bg-alt); }
+.map-section .container { max-width: 960px; }
+.map-section h2 { text-align: center; font-size: clamp(1.4rem, 2.5vw, 1.8rem); margin-bottom: 0.4rem; }
+.map-section p.lead-line { text-align: center; color: var(--color-ink-soft); max-width: 56ch; margin: 0 auto 1.5rem; }
+.map-embed { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--color-line); box-shadow: var(--shadow-md); background: var(--color-bg-alt); }
+.map-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
 /* ---------- Contact form ---------- */
 .contact-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; max-width: 1080px; margin: 0 auto; align-items: start; }
 .contact-form { background: #fff; border: 1px solid var(--color-line); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-sm); }
