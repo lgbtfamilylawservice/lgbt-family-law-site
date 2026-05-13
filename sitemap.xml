@@ -26,6 +26,26 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.lgbtfamilylawservice.com/mediation/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.lgbtfamilylawservice.com/identity-documents/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.lgbtfamilylawservice.com/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lgbtfamilylawservice.com/faq/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.lgbtfamilylawservice.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
